@@ -129,10 +129,15 @@ void xpc_crasher(char* service_name) {
   return;
 }
 
-void respringBackboard(void) {
+void restartBackboard(void) {
   xpc_crasher("com.apple.backboard.TouchDeliveryPolicyServer");
 }
 
-void killMobileGestalt(void) {
-  xpc_crasher("com.apple.mobilegestalt.xpc");
+void restartFrontboard(void) {
+  // NOTE: This will not kill your app on some versions
+  // You may also need to exit(0) afterwards
+  xpc_crasher("com.apple.frontboard.systemappservices");
+}
+void do_respring() {
+    xpc_crasher("com.apple.frontboard.systemappservices"); xpc_crasher("com.apple.backboard.TouchDeliveryPolicyServer");
 }

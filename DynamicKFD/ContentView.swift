@@ -9,6 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var kfd: UInt64 = 0
+
+    private var puaf_pages_options = [16, 32, 64, 128, 256, 512, 1024, 2048]
+    @State private var puaf_pages_index = 7
+    @State private var puaf_pages = 0
+
+    private var puaf_method_options = ["physpuppet", "smith"]
+    @State private var puaf_method = 1
+
+    private var kread_method_options = ["kqueue_workloop_ctl", "sem_open"]
+    @State private var kread_method = 1
+
+    private var kwrite_method_options = ["dup", "sem_open"]
+    @State private var kwrite_method = 1
+    
     @AppStorage(DynamicKeys.isEnabled.rawValue) private var isEnabled: Bool = false
     @AppStorage(DynamicKeys.currentSet.rawValue) private var currentSet: Int = 0
     @AppStorage(DynamicKeys.originalDeviceSubType.rawValue) private var originalDeviceSubType: Int = 0
@@ -61,6 +76,9 @@ struct ContentView: View {
                         
                     }else{
                         //enable
+                        puaf_pages = puaf_pages_options[puaf_pages_index]
+                        kfd = do_kopen(UInt64(puaf_pages), UInt64(puaf_method), UInt64(kread_method), UInt64(kwrite_method))
+                        do_fun()
                         if checkedProMax {
                             plistChange(plistPath: dynamicPath, key: "ArtworkDeviceSubType", value: 2796)
                             currentSet = 2796
@@ -86,7 +104,7 @@ struct ContentView: View {
                         .foregroundColor(.white.opacity(0.9))
                         .overlay {
                             if !isDoing{
-                                Text(isEnabled ? "Disable" : "Enable")
+                                Text(isEnabled ? "Disable" : "kopen & Enable")
                                     .foregroundColor(.black)
                                     .bold()
                             }else{
@@ -116,7 +134,7 @@ struct ContentView: View {
                 }
             }
             
-            .navigationTitle("DynamicCow")
+            .navigationTitle("DynamicKFD")
             .toolbar {
             
                 NavigationLink {
