@@ -12,8 +12,6 @@
 		6590754D2A761549000491FC /* DynamicCowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075102A761549000491FC /* DynamicCowApp.swift */; };
 		6590754E2A761549000491FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659075112A761549000491FC /* Assets.xcassets */; };
 		6590754F2A761549000491FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659075132A761549000491FC /* Preview Assets.xcassets */; };
-		659075502A761549000491FC /* kfdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075152A761549000491FC /* kfdApp.swift */; };
-		659075512A761549000491FC /* AAAA.bin in Resources */ = {isa = PBXBuildFile; fileRef = 659075182A761549000491FC /* AAAA.bin */; };
 		659075532A761549000491FC /* fun.m in Sources */ = {isa = PBXBuildFile; fileRef = 659075322A761549000491FC /* fun.m */; };
 		659075542A761549000491FC /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = 659075332A761549000491FC /* vm_unaligned_copy_switch_race.c */; };
 		659075552A761549000491FC /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = 659075342A761549000491FC /* grant_full_disk_access.m */; };
@@ -28,17 +26,15 @@
 		6590755F2A761549000491FC /* DynamicKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075462A761549000491FC /* DynamicKeys.swift */; };
 		659075602A761549000491FC /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075472A761549000491FC /* Alert++.swift */; };
 		659075612A761549000491FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075492A761549000491FC /* ContentView.swift */; };
-		659075622A761549000491FC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6590754A2A761549000491FC /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BEC6F07296A5E3600741B6E /* DynamicCow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicCow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEC6F07296A5E3600741B6E /* DynamicKFD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicKFD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6590750E2A761549000491FC /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		6590750F2A761549000491FC /* AppearanceCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceCellView.swift; sourceTree = "<group>"; };
 		659075102A761549000491FC /* DynamicCowApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCowApp.swift; sourceTree = "<group>"; };
 		659075112A761549000491FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659075132A761549000491FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		659075152A761549000491FC /* kfdApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kfdApp.swift; sourceTree = "<group>"; };
 		659075162A761549000491FC /* kfd.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = kfd.entitlements; sourceTree = "<group>"; };
 		659075182A761549000491FC /* AAAA.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AAAA.bin; sourceTree = "<group>"; };
 		659075192A761549000491FC /* krkw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krkw.h; sourceTree = "<group>"; };
@@ -77,9 +73,9 @@
 		659075452A761549000491FC /* MachineName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineName.swift; sourceTree = "<group>"; };
 		659075462A761549000491FC /* DynamicKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicKeys.swift; sourceTree = "<group>"; };
 		659075472A761549000491FC /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
-		659075482A761549000491FC /* DynamicCow-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DynamicCow-Bridging-Header.h"; sourceTree = "<group>"; };
 		659075492A761549000491FC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6590754A2A761549000491FC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659075632A76188D000491FC /* DynamicKFD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DynamicKFD-Bridging-Header.h"; path = "DynamicKFD/DynamicKFD-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +100,7 @@
 		2BEC6F08296A5E3600741B6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BEC6F07296A5E3600741B6E /* DynamicCow.app */,
+				2BEC6F07296A5E3600741B6E /* DynamicKFD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,10 +112,10 @@
 				6590750F2A761549000491FC /* AppearanceCellView.swift */,
 				659075102A761549000491FC /* DynamicCowApp.swift */,
 				659075112A761549000491FC /* Assets.xcassets */,
+				659075632A76188D000491FC /* DynamicKFD-Bridging-Header.h */,
 				659075122A761549000491FC /* Preview Content */,
 				659075142A761549000491FC /* kfd */,
 				659075442A761549000491FC /* Extensions */,
-				659075482A761549000491FC /* DynamicCow-Bridging-Header.h */,
 				659075492A761549000491FC /* ContentView.swift */,
 				6590754A2A761549000491FC /* Info.plist */,
 			);
@@ -137,7 +133,6 @@
 		659075142A761549000491FC /* kfd */ = {
 			isa = PBXGroup;
 			children = (
-				659075152A761549000491FC /* kfdApp.swift */,
 				659075162A761549000491FC /* kfd.entitlements */,
 				659075172A761549000491FC /* libkfd */,
 				6590752C2A761549000491FC /* fun */,
@@ -254,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BEC6F06296A5E3600741B6E /* DynamicCow */ = {
+		2BEC6F06296A5E3600741B6E /* DynamicKFD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BEC6F15296A5E3900741B6E /* Build configuration list for PBXNativeTarget "DynamicCow" */;
+			buildConfigurationList = 2BEC6F15296A5E3900741B6E /* Build configuration list for PBXNativeTarget "DynamicKFD" */;
 			buildPhases = (
 				2BEC6F03296A5E3600741B6E /* Sources */,
 				2BEC6F04296A5E3600741B6E /* Frameworks */,
@@ -266,9 +261,9 @@
 			);
 			dependencies = (
 			);
-			name = DynamicCow;
+			name = DynamicKFD;
 			productName = DynamicCow;
-			productReference = 2BEC6F07296A5E3600741B6E /* DynamicCow.app */;
+			productReference = 2BEC6F07296A5E3600741B6E /* DynamicKFD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +274,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					2BEC6F06296A5E3600741B6E = {
 						CreatedOnToolsVersion = 14.2;
@@ -300,7 +295,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BEC6F06296A5E3600741B6E /* DynamicCow */,
+				2BEC6F06296A5E3600741B6E /* DynamicKFD */,
 			);
 		};
 /* End PBXProject section */
@@ -312,9 +307,7 @@
 			files = (
 				6590754F2A761549000491FC /* Preview Assets.xcassets in Resources */,
 				6590754E2A761549000491FC /* Assets.xcassets in Resources */,
-				659075622A761549000491FC /* Info.plist in Resources */,
 				6590755C2A761549000491FC /* Preview Assets.xcassets in Resources */,
-				659075512A761549000491FC /* AAAA.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +322,6 @@
 				6590755A2A761549000491FC /* vnode.c in Sources */,
 				659075602A761549000491FC /* Alert++.swift in Sources */,
 				6590754C2A761549000491FC /* AppearanceCellView.swift in Sources */,
-				659075502A761549000491FC /* kfdApp.swift in Sources */,
 				659075542A761549000491FC /* vm_unaligned_copy_switch_race.c in Sources */,
 				659075552A761549000491FC /* grant_full_disk_access.m in Sources */,
 				659075592A761549000491FC /* offsets.m in Sources */,
@@ -384,6 +376,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -444,6 +437,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -471,11 +465,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DynamicCow/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DynamicKFD/Preview Content\"";
 				DEVELOPMENT_TEAM = 6Q625HQD73;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DynamicCow/Info.plist;
+				INFOPLIST_FILE = DynamicKFD/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DynamicKFD;
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "In order to reset the plist file to its initial state in case of file corruption DynamicCow needs access sandbox.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -492,7 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "DynamicCow/DynamicCow-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicKFD/DynamicKFD-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,11 +503,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DynamicCow/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DynamicKFD/Preview Content\"";
 				DEVELOPMENT_TEAM = 6Q625HQD73;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DynamicCow/Info.plist;
+				INFOPLIST_FILE = DynamicKFD/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DynamicKFD;
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "In order to reset the plist file to its initial state in case of file corruption DynamicCow needs access sandbox.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -529,7 +525,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "DynamicCow/DynamicCow-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicKFD/DynamicKFD-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -547,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BEC6F15296A5E3900741B6E /* Build configuration list for PBXNativeTarget "DynamicCow" */ = {
+		2BEC6F15296A5E3900741B6E /* Build configuration list for PBXNativeTarget "DynamicKFD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BEC6F16296A5E3900741B6E /* Debug */,

@@ -17,6 +17,14 @@ uint64_t do_kopen(uint64_t puaf_pages, uint64_t puaf_method, uint64_t kread_meth
     return _kfd;
 }
 
+void killMobileGestalt(void) {
+    xpc_crasher("com.apple.mobilegestalt.xpc");
+}
+
+void respringBackboard(void) {
+    xpc_crasher("com.apple.backboard.TouchDeliveryPolicyServer");
+}
+
 void do_kclose(void)
 {
     kclose((struct kfd*)(_kfd));

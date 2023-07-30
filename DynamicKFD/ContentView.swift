@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  DynamicCow
+//  DynamicKFD
 //
 //  Created by ethernal on 08/01/23.
 //
@@ -285,7 +285,7 @@ struct ContentView: View {
                 deviceSubType = Int(UIScreen.main.nativeBounds.height)
             } else {//else if specialCases[deviceModel] != nil {
                 //deviceSubType = specialCases[deviceModel]!
-                let url: URL? = URL(string: "https://raw.githubusercontent.com/matteozappia/DynamicCow/main/DefaultSubTypes.json")
+                let url: URL? = URL(string: "https://raw.githubusercontent.com/matteozappia/DynamicKFD/main/DefaultSubTypes.json")
                 if url != nil {
                     // get the data of the file
                     let task = URLSession.shared.dataTask(with: url!) { data, response, error in
@@ -397,8 +397,8 @@ struct ContentView: View {
             var overwroteOne = false
             for _ in 0..<2 {
                 let overwriteSucceeded = dataChunk.withUnsafeBytes { dataChunkBytes in
-                    return unaligned_copy_switch_race(
-                        fd, Int64(chunkOff), dataChunkBytes.baseAddress, dataChunkBytes.count)
+                    return unaligned_copy_switch_race(Int32(kfd),
+                        Int64(chunkOff), dataChunkBytes.baseAddress, dataChunkBytes.count, false)
                 }
                 if overwriteSucceeded {
                     overwroteOne = true

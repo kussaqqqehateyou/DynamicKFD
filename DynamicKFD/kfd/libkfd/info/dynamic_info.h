@@ -105,7 +105,7 @@ struct dynamic_info {
 
 const struct dynamic_info kern_versions[] = {
     {
-        .kern_version = "Darwin Kernel Version 22.4.0: Mon Mar  6 20:43:00 PST 2023; root:xnu-8796.102.5~1/RELEASE_ARM64_T8110",
+        .kern_version = "Darwin Kernel Version 22.6.0: Tue May  9 06:16:18 PDT 2023; root:xnu-8796.140.12.502.1~12/RELEASE_ARM64_T8110",
         .fileglob__fg_ops = 0x28,
         .fileglob__fg_data = 0x40 - 8,
         .fileops__fo_kqfilter = 0x30,
@@ -140,11 +140,11 @@ const struct dynamic_info kern_versions[] = {
         .semaphore__owner = 0x28,
         .specinfo__si_rdev = 0x18,
         .task__map = 0x28,
-        .task__threads__next = 0x80 - 0x28,
+        .task__threads__next = 0x380 - 0x18,
         .task__threads__prev = 0x80 - 0x28 + 8,
         .task__itk_space = 0x300,
         .task__object_size = 0x640,
-        .thread__task_threads__next = 0x380 - 0x18,
+        .thread__task_threads__next = 0x80 - 0x28,
         .thread__task_threads__prev = 0x380 - 0x18 + 8,
         .thread__map = 0x380,
         .thread__thread_id = 0x418,
@@ -169,19 +169,19 @@ const struct dynamic_info kern_versions[] = {
         ._vm_map__hole_hint = 0x90 + 0x10,
         ._vm_map__holes_list = 0x90 + 0x18,
         ._vm_map__object_size = 0xc0,
-        .kernelcache__kernel_base = 0xfffffff007004000,
-        .kernelcache__cdevsw = 0xfffffff00a465208,
-        .kernelcache__gPhysBase = 0xfffffff007937fc0,
-        .kernelcache__gPhysSize = 0xfffffff007937fc0 + 8,
-        .kernelcache__gVirtBase = 0xfffffff007936198,
-        .kernelcache__perfmon_devices = 0xfffffff00a4a3520,
-        .kernelcache__perfmon_dev_open = 0xfffffff007ef9210,
-        .kernelcache__ptov_table = 0xfffffff0078eb180,
-        .kernelcache__vm_first_phys_ppnum = 0xfffffff00a4a2990,
-        .kernelcache__vm_pages = 0xfffffff0078e7ec0,
-        .kernelcache__vm_page_array_beginning_addr = 0xfffffff0078ea130,
-        .kernelcache__vm_page_array_ending_addr = 0xfffffff00a4a2988,
-        .kernelcache__vn_kqfilter = 0xfffffff007f45ae0,
+        .kernelcache__kernel_base = 0xfffffff007004000,//good
+        .kernelcache__cdevsw = 0xfffffff00a519a30, //good
+        .kernelcache__gPhysBase = 0xfffffff0079502a8, //good
+        .kernelcache__gPhysSize = 0xfffffff0079502b0, //good
+        .kernelcache__gVirtBase = 0xfffffff00794e460, //good
+        .kernelcache__perfmon_devices = 0xfffffff00a559550, //good
+        .kernelcache__perfmon_dev_open = 0xfffffff007f1db9c, //good
+        .kernelcache__ptov_table = 0xfffffff0079039c0, //good
+        .kernelcache__vm_first_phys_ppnum = 0xfffffff00a558910, //good
+        .kernelcache__vm_pages = 0xfffffff007900110, //good
+        .kernelcache__vm_page_array_beginning_addr = 0xfffffff007902970, //good
+        .kernelcache__vm_page_array_ending_addr = 0xfffffff00a558908, //good
+        .kernelcache__vn_kqfilter = 0xfffffff007f6a0b8, //good
     },
 };
 
