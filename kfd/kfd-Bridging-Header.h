@@ -24,7 +24,7 @@ void killMobileGestalt(void) {
 }
 
 int ResSet16(void);
-int DynamicKFD(NSInteger SubType, NSInteger width);
+int DynamicKFD(void);
 
 
 uint64_t xResolution;
